@@ -2,7 +2,7 @@
 //  SubmitEnterAppDelegate.cpp
 //  SubmitEnter
 //
-//  Created by rurara on 13. 7. 7..
+//  Created by rurara on 13. 7. 21..
 //  Copyright __MyCompanyName__ 2013년. All rights reserved.
 //
 
@@ -10,7 +10,8 @@
 
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
-#include "HelloWorldScene.h"
+//#include "HelloWorldScene.h"
+#include "MainViewController.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -37,7 +38,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = HelloWorld::scene();
+    CCScene *pScene = MainViewController::scene();
 
     // run
     pDirector->runWithScene(pScene);
