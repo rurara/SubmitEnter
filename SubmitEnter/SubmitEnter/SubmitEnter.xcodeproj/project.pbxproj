@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117A013D17AA5A3400584111 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 117A013C17AA5A3400584111 /* Default-568h@2x.png */; };
+		117A014017AA5FBF00584111 /* RUtil-C++.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 117A013E17AA5FBF00584111 /* RUtil-C++.cpp */; };
 		C6EDC278179BE8CA00410E5B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EDC277179BE8CA00410E5B /* QuartzCore.framework */; };
 		C6EDC27A179BE8CA00410E5B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EDC279179BE8CA00410E5B /* OpenGLES.framework */; };
 		C6EDC27C179BE8CA00410E5B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6EDC27B179BE8CA00410E5B /* OpenAL.framework */; };
@@ -284,6 +286,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		117A013C17AA5A3400584111 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		117A013E17AA5FBF00584111 /* RUtil-C++.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "RUtil-C++.cpp"; path = "Classes/Util/RUtil-C++.cpp"; sourceTree = "<group>"; };
+		117A013F17AA5FBF00584111 /* RUtil-C++.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RUtil-C++.h"; path = "Classes/Util/RUtil-C++.h"; sourceTree = "<group>"; };
 		C6EDC274179BE8CA00410E5B /* SubmitEnter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubmitEnter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EDC277179BE8CA00410E5B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C6EDC279179BE8CA00410E5B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -903,6 +908,7 @@
 		C6EDC26B179BE8CA00410E5B = {
 			isa = PBXGroup;
 			children = (
+				117A013C17AA5A3400584111 /* Default-568h@2x.png */,
 				C6EDC287179BE8CA00410E5B /* SubmitEnter */,
 				C6EDC276179BE8CA00410E5B /* Frameworks */,
 				C6EDC275179BE8CA00410E5B /* Products */,
@@ -2101,6 +2107,8 @@
 				C6EDC61A179BE8D000410E5B /* AppDelegate.cpp */,
 				C6EDC61C179BE8D000410E5B /* HelloWorldScene.h */,
 				C6EDC61D179BE8D000410E5B /* HelloWorldScene.cpp */,
+				117A013E17AA5FBF00584111 /* RUtil-C++.cpp */,
+				117A013F17AA5FBF00584111 /* RUtil-C++.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2177,6 +2185,7 @@
 				C6EDC29E179BE8CA00410E5B /* iTunesArtwork in Resources */,
 				C6EDC33D179BE8CB00410E5B /* ChangeLog in Resources */,
 				C6EDC4B1179BE8CE00410E5B /* project.pbxproj in Resources */,
+				117A013D17AA5A3400584111 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2437,6 +2446,7 @@
 				C6EDC61B179BE8D000410E5B /* AppDelegate.cpp in Sources */,
 				C6EDC61E179BE8D000410E5B /* HelloWorldScene.cpp in Sources */,
 				C6EDC626179BE98500410E5B /* MainViewController.cpp in Sources */,
+				117A014017AA5FBF00584111 /* RUtil-C++.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

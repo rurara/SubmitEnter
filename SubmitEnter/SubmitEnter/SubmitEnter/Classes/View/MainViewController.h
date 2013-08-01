@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "cocos2d.h"
+#include "RUtil-C++.h"
 
 class MainViewController : public cocos2d::CCLayerColor {
     
