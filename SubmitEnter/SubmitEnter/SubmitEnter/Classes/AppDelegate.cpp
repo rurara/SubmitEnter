@@ -50,11 +50,6 @@ bool AppDelegate::applicationDidFinishLaunching()
     
     CCSize frameSize = pEGLView->getFrameSize();
     
-    // In this demo, we select resource according to the frame's height.
-    // If the resource size is different from design resolution size, you need to set contentScaleFactor.
-    // We use the ratio of resource's height to the height of design resolution,
-    // this can make sure that the resource's height could fit for the height of design resolution.
-    
     std::vector<std::string> paths;
     
     if (frameSize.height <= iphone.size.height)

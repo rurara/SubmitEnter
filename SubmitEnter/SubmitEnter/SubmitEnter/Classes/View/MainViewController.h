@@ -21,6 +21,7 @@ public:
     
     CREATE_FUNC(MainViewController);
     void createLayout();
+    void tapNumberButtonAction(CCObject* sender);
 };
 #endif
 

@@ -66,33 +66,54 @@ void MainViewController::createLayout(){
     
     numberDisplaySprite->addChild(numberLabel);
     
-        this->addChild(numberDisplaySprite);
+    this->addChild(numberDisplaySprite);
     
     
-    
-    //상단 숫자 표시 출력 부분
-    CCSprite *bottomNumberDisplaySprite = CCSprite::create();
-    bottomNumberDisplaySprite->setTextureRect(CCRectMake(160, 200, 320, 100));
-    bottomNumberDisplaySprite->setPosition(CCPointMake(160, 50));
-    bottomNumberDisplaySprite->setColor(ccc3(220, 229, 80));
-    
-    
-    
-    CCLabelTTF *bottomNumberLabel = CCLabelTTF::create("label",
-                                                 "Thonburi",
-                                                 20,
-                                                 CCSize(320,50),
-                                                 kCCTextAlignmentCenter,
-                                                 kCCVerticalTextAlignmentCenter);
-    
-    bottomNumberLabel -> setPosition(ccp(160, 50));
-    bottomNumberLabel->setColor(ccc3(100, 100, 87));
-    
-    
-    bottomNumberDisplaySprite->addChild(bottomNumberLabel);
+    //button layer
+    CCLayerColor *buttonLayer = CCLayerColor::create(ccc4(255, 0, 0, 255),320,380);
+    buttonLayer->setPosition(ccp(0,0));
 
-    this->addChild(bottomNumberDisplaySprite);
+    CCMenu *buttonMenu = CCMenu::create();
+
+    for (int i=1; i<=9; i++) {
+
+        CCSprite *backgroundSprite = CCSprite::create();
+        backgroundSprite->setTextureRect(CCRectMake(0+i*10, 0+i*10, 200, 200));
+        backgroundSprite->setColor(ccBLUE);
+        
+        
+        CCString *text = CCString::createWithFormat("%d",i);
+        
+        CCMenuItemFont *numberButton = CCMenuItemFont::create(text->getCString(), this,menu_selector(MainViewController::tapNumberButtonAction));
+        numberButton->setColor(ccc3(0, 0, 0));
+        numberButton->setTag(i);
+
+
+//        backgroundSprite->addChild(numberButton);
+//        buttonLayer->addChild(backgroundSprite);
+        buttonMenu->addChild(numberButton);
+    }
+    
+
+
+    
+    buttonMenu->alignItemsInColumns(3,3,3,NULL);
+    
+    buttonLayer -> addChild(buttonMenu);
+    
+    this->addChild(buttonLayer);
+    
+    
     
     //하단 숫자 입력 키패드 부분
     
 }
+
+
+void MainViewController::tapNumberButtonAction(CCObject* sender){
+    CCMenuItem *button = (CCMenuItem *)sender;
+    int buttonTag = button->getTag();
+    CCLOG("tap number - %d",buttonTag);
+    
+}
+
